@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - Your E-Commerce Store</title>
+    
+
+    <style>
+        /* CSS for styling the item page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* To push the logo and links to opposite sides */
+    align-items: center; /* Vertically center the content */
+    padding:  8px 0px 8px 8px;/* Add padding as needed */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* logo */
+.logo img {
+    height: 40px; /* Adjust the logo height as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 5px white, 0 0 5px white;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    text-shadow: 0 0 15px white, 0 0 15px white;
+}
+
+.nav-links li {
+    margin-right: 20px; /* Adjust spacing between menu items */
+    text-transform: uppercase;
+    margin: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 4em;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF5733; /* Adjust the color to your preference */
+}
+
+.product-description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.add-to-cart-button, button {
+    background-color: #312f2f; /* Adjust the color to your preference */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.product-type{
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+}
+.product-reviews {
+    margin-top: 40px;
+}
+
+/* Add styles for the footer as needed */
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="logo.jpg" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="product.html">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <button><a href="male.html">&larr;Back</a></button>
+        <section class="product-details">
+            <div class="product-image">
+                <img id="main-img" src="C:\Users\user\AY CODE\my project\project images\IMG-20231021-WA0140.jpg" alt="Gucci">
+            </div>
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p class="product-price">$99.99</p>
+                <p class="product-description">
+                    Description of the product goes here. Provide details about the product's features, specifications, and any other relevant information.
+                </p>
+                <button class="add-to-cart-button">Order Now</button>
+            </div>
+        </section>
+        <section>
+            <div class="img-container">
+                <img type="button" id="type1" class="product-type" src="C:\Users\user\AY CODE\my project\project images\IMG-20231021-WA0140.jpg" alt="">
+                <!-- <img type="button" id="type2" class="product-type" src="C:\Users\user\AY CODE\my project\cloth1.jpg" alt=""> -->
+                <!-- <img type="button" id="type3" class="product-type" src="C:\Users\user\AY CODE\my project\Capture.PNG" alt=""> -->
+            </div>
+        </section>
+
+        <section class="product-reviews">
+            <h2>Customer Reviews</h2>
+            <!-- Customer reviews and ratings go here -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+        let x = document.getElementById('main-img');
+        let y = document.getElementById('type1');
+        let z = document.getElementById('type2');
+        let t3 = document.getElementById('type3');
+        document.getElementById('type1').onclick = function(){
+            x.src = y.src; // Assign the source URL of 'type2' to 'main-img'
+        }
+        document.getElementById('type2').onclick = function(){
+            x.src = z.src; // Assign the source URL of 'type2' to 'main-img'
+        }
+        document.getElementById('type3').onclick = function(){
+            x.src = t3.src; // Assign the source URL of 'type2' to 'main-img'
+        }
+
+    </script>
+</body>
+</html>

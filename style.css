@@ -1,0 +1,44 @@
+/* Reset margin and padding for HTML and body elements */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the navigation bar */
+nav {
+    width: 100%;
+    background-color: black;
+    padding: 5px 7px;
+    justify-content: space-between;
+}
+
+/* Common styles for images */
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0 6px;
+    box-shadow: 0 0 6px white, 0 0 6px white;
+}
+
+/* Styles for input elements */
+input {
+    background-color: red;
+    color: white;
+    border-radius: 5px 0 6px 6px;
+    padding: 8px 10px;
+    margin-top: 3px;
+    margin-right: 10px;
+    float: right;
+    box-shadow: 0 0 4px white, 0 0 4px white;
+}
+
+/* Styles for the footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: serif;
+    /* Additional styling for the footer can be added here */
+}

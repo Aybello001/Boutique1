@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+}
+
+
+.navbar {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* To push the logo and links to opposite sides */
+    align-items: center; /* Vertically center the content */
+    padding:  8px 0px 8px 8px;/* Add padding as needed */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* logo */
+.logo img {
+    height: 40px; /* Adjust the logo height as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 5px white, 0 0 5px white;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    text-shadow: 0 0 15px white, 0 0 15px white;
+}
+
+.nav-links li {
+    margin-right: 20px; /* Adjust spacing between menu items */
+    text-transform: uppercase;
+    margin: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+
+}
+p.p1{
+    margin-top: 4em;
+    justify-content: center;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+nav.nav2{
+    display: flex;
+    height: 3em;
+    text-align: center;
+    justify-content: center;
+}
+#male {
+    width: 50%;
+    background-color: black;
+    padding: 10px 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#female {
+    width: 50%;
+    background-color: red;
+    padding: 10px 12px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+#male:hover{
+    background-color: red;
+    box-shadow: 0 0 8px black, 0 0 8px black;
+    color: white;
+    font-weight: bolder;
+}
+#female:hover{
+    background-color: black;
+    box-shadow: 0 0 8px red, 0 0 8px red;
+    color: white;
+    font-weight: bolder;
+}

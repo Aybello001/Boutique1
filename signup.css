@@ -1,0 +1,54 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(90deg, blue, green, red);
+}
+p{
+    float: left;
+    margin-right: 70%;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+div.container{
+    width: 16em;
+    height: auto;
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    background: linear-gradient(360deg, blue, green, red);
+    border-radius: 0 15px;
+    padding: 18px 20px;
+    justify-content: center;
+    margin-top: 15%;
+
+}
+input{
+    height: 35px;
+    margin-bottom: 6px;
+    border-radius: 0 6px;
+    display: flex;
+    
+}
+#img{
+    display: flex;
+    position: relative;
+    height: 20px;
+    bottom: 36px;
+    left: 144px;
+}
+.password-icon{
+    height: 20px;
+    position: relative;
+    display: flex;
+    bottom: 36px;
+    left: 144px;
+}
